@@ -11,6 +11,7 @@ The screens: <br><br>
 ![edit product](https://user-images.githubusercontent.com/23221280/138929030-2c7eb27a-be32-4097-a25f-1a767f4355d7.PNG)
 ![create new product](https://user-images.githubusercontent.com/23221280/138929117-95d41238-e89e-414b-b437-17511426adef.PNG)
 ![ana sayfa](https://user-images.githubusercontent.com/23221280/138929170-cae48038-83ec-41b3-bb01-6ccad8e8b358.PNG)
-mysql look:
-ps: I have deleted one item so id!s are not starting from 1.
+mysql look: <br>
+ps: I have deleted one item so id!s are not starting from 1. <br>
 ![mysql](https://user-images.githubusercontent.com/23221280/138931697-889790cf-61df-41fa-b17c-00ccc4d320a3.PNG)
+<br>
