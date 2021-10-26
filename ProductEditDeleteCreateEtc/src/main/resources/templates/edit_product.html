@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Product</title>
+</head>
+<body>
+    <div class = "container" align="center">
+        <h1>Edit Existing Product</h1>
+        <br />
+        <form action="#" th:action="@{/save}" th:object="${product}"
+            method="post">
+            <table border="0" cellpadding="10">                
+                <tr>
+                    <td>Product ID:</td>
+                    <td><input type="text" th:field="*{id}" readonly="readonly" /></td>
+                </tr>
+                <tr>
+                    <td>Product Name:</td>
+                    <td><input type="text" th:field="*{name}" /></td>
+                </tr>
+                <tr>
+                    <td>Brand:</td>
+                    <td><input type="text" th:field="*{brand}" /></td>
+                </tr>
+                <tr>
+                    <td>Made In:</td>
+                    <td><input type="text" th:field="*{madein}" /></td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td><input type="text" th:field="*{price}" /></td>
+                </tr>                            
+                <tr>
+                    <td colspan="2"><button class="btn" type="submit">Save</button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+html,
+body {
+	height: 100%;
+}
+h1,deneme{
+	color: white;
+}
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #ff1493, #ff8c00);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.btn{
+	background-color: #ff8c00; 
+	color: white;
+	border-color: ff1493;
+	font-size: 20px;
+
+}	
+.btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+</style>

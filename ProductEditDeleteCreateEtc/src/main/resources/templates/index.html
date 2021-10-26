@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Management</title>
+</head>
+<body>
+
+<div class ="container" align = "center">
+
+<h1>Product Manager</h1>
+<p class="create-product-link-header"> <a href="newProduct">Create New Product</a> </p>
+<br></br>
+
+
+<table border="1">
+	<thead>
+		<tr>
+			<th>Product ID</th>
+			<th>Name</th>
+			<th>Brand</th>
+			<th>Made In</th>
+			<th>Price</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="product : ${listProducts}">
+			<td th:text="${product.id}" >Product ID</td>
+			<td th:text="${product.name}" >Name</td>
+			<td th:text="${product.brand}" >Brand</td>
+			<td th:text="${product.madein}" >Made in</td>
+			<td th:text="${product.price}" >Price</td>
+			<td>
+            	<a th:href="@{'/edit/' + ${product.id}}">Edit</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+              	<a th:href="@{'/delete/' + ${product.id}}">Delete</a>
+            </td>   
+		</tr>
+	</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+</body>
+</html>
+
+<style>
+html,
+body {
+	height: 100%;
+}
+h1,deneme{
+	color: white;
+}
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #7fff00, #006400);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+thead.th {
+		background-color: #116080;
+	}
+
+tbody.tr:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+
+	td.position:relative,
+	td:hover:before{
+		content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+	}
+	
+.create-product-link-header{
+	color: #fff;
+	font-size: 20px;
+	
+}
+</style>
+
