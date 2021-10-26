@@ -2,7 +2,7 @@
 
 For this project, I have used https://start.spring.io/ website to create spring project. <br>
 I have added these dependencies: Spring Web, MySql Driver, Spring Data Jpa, Thymeleaf.<br>
-If your database username and password is diffirent, then you have to change this properties from application.properties file.
+If your database username and password is different, then you have to change this properties from application.properties file.
 I have created a jar file for this project you can use it. <br>
 Here is guide commands: <br><br>
 ![run jar](https://user-images.githubusercontent.com/23221280/138931086-8788240b-6359-4626-95c4-241ea1111d65.PNG)
