@@ -13,6 +13,4 @@ The screens: <br><br>
 ![ana sayfa](https://user-images.githubusercontent.com/23221280/138929170-cae48038-83ec-41b3-bb01-6ccad8e8b358.PNG)
 mysql look:
 ps: I have deleted one item so id!s are not starting from 1.
-![mysql](https://user-images.githubusercontent.com/23221280/138931436-ccdbfc2e-6a74-4486-a5a1-6dffdc6e661a.PNG)
-
-
+![mysql](https://user-images.githubusercontent.com/23221280/138931697-889790cf-61df-41fa-b17c-00ccc4d320a3.PNG)
